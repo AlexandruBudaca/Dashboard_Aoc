@@ -1,16 +1,8 @@
+*:focus {
+  outline: none;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,15 +16,62 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login-box {
+  background-color: rgb(22, 51, 65);
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 4px black;
+}
+.login-box h3{
+  color: orange;
+}
+.login-box button {
+  margin-top: 10px;
+  color: white;
+  padding: 5px 20px;
+  background-color: orange;
+  border: none;
+  font-weight: 600;
+  border-radius: 30px;
+}
+.login-box button:hover {
+  background-color: white;
+  color: orange;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formline {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
 }
+.formline label{
+  align-self: flex-start;
+  color: rgb(255, 166, 0);
+  font-size: 13px;
+}
+.formline input {
+  align-self: flex-start;
+  color: rgb(255, 166, 0);
+  font-size: 13px;
+  height: 30px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  padding: 0px 10px;
+}
+.formline input:active {
+  outline: none;
+  border: none;
+}
+
+
+
