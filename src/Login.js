@@ -18,7 +18,6 @@ function Login() {
     fetch("https://crmaoc.herokuapp.com/login", {
       method: "POST",
       credentials: "include",
-      withCredentials: true,
       headers: {
         "Content-Type": "application/json",
       },
