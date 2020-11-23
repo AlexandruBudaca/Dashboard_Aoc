@@ -25,11 +25,11 @@ function Login() {
       body: JSON.stringify(username),
     })
       .then((res) => {
-        res.json();
-        console.log(res);
-      })
-      .then((data) => {
-        console.log(data);
+        if (res.status !== 401) {
+          return res.json().then((data) => console.log(data));
+        } else {
+          return {};
+        }
       })
       .catch((err) => {
         console.log("an error happened");
