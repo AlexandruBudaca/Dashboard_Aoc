@@ -17,7 +17,6 @@ function Login() {
     e.preventDefault();
     fetch("https://crmaoc.herokuapp.com/login", {
       method: "POST",
-      mode: "cors",
       credentials: "include",
       headers: {
         "Content-Type": "application/json",
